@@ -1,11 +1,10 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-
-import '../styles/global.css'
+import '../styles/global.css';
 
 export interface Props {
-    title?: string;
+  title?: string;
 }
 
 const { title = 'Astro Crash Course' } = Astro.props as Props;
@@ -13,7 +12,7 @@ const { title = 'Astro Crash Course' } = Astro.props as Props;
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,9 +21,9 @@ const { title = 'Astro Crash Course' } = Astro.props as Props;
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <title>{title}</title>
   </head>
-<body>
+  <body>
     <Header />
     <slot />
     <Footer />
-</body>
+  </body>
 </html>

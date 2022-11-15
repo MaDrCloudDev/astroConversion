@@ -3,36 +3,36 @@ import logos from '../images/framework-logos.png'
 import logosSmall from '../images/framework-logos-small.png'
 
 export interface Props {
-    heading?: string;
-    text?: string;
-    showExtra?: boolean;
+  heading?: string;
+  text?: string;
+  showExtra?: boolean;
 }
 
-const { heading = "Welcome To The Astro Crash Course!", text = "Build super fast HTML-first websites using your favorite JavaScript frameworks", showExtra = false } = Astro.props as Props;
+const { heading = "Welcome To The Astro Crash Course!", text="Build super fast HTML-first websites using your favorite JavaScript frameworks", showExtra = false } = Astro.props as Props;
 ---
 
 <section class="showcase">
-    <div class="showcase-text">
-      <h1>{heading}</h1>
-      <p>
-        {text}
-      </p>
-    </div>
-
-    {showExtra && <>
-    <div class="showcase-img">
-        <img class="logos" src={logos} alt="" />
-        <img class="logos-small" src={logosSmall} alt="" />
-    </div>
-
-    <p class="showcase-demo">
-      <small>This is a demo website used for the YouTube crash course</small>
+  <div class="showcase-text">
+    <h1>{heading}</h1>
+    <p>
+      {text}
     </p>
-    </>}
-  </section>
+  </div>
 
-  <style>
-    .showcase {
+  {showExtra && <>
+    <div class="showcase-img">
+    <img class="logos" src={logos} alt="" />
+    <img class="logos-small" src={logosSmall} alt="" />
+  </div>
+
+  <p class="showcase-demo">
+    <small>This is a demo website used for the YouTube crash course</small>
+  </p>
+  </>}
+</section>
+
+<style>
+  .showcase {
   height: auto;
   background-color: var(--color-secondary);
   background-image: linear-gradient(to bottom, var(--color-primary), rgb(15 23 42 / 0));
@@ -75,4 +75,4 @@ const { heading = "Welcome To The Astro Crash Course!", text = "Build super fast
   text-align: center;
   font-weight: 300;
 }
-  </style>
+</style>
