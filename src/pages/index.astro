@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import Layout from '../layouts/Layout.astro';
 import Showcase from '../components/Showcase.astro';
 import Features from '../components/Features.astro';
 import Tabs from '../components/Tabs.astro';
@@ -8,25 +8,52 @@ import Tabs from '../components/Tabs.astro';
 <Layout>
 	<Showcase showExtra={true} />
 	<Features />
-	
-	<section class="page-content">
-		<div class="container">
-			<h2>Get Started With Astro</h2>
-			<p>
-				Get a new Astro project up and running locally with our helpful
-				create-astro CLI wizard!
-			</p>
-		
-			<Tabs headings={['NPM', 'PNPM', 'YARN']} contents={['$ npm create astro@latest', '$ pnpm create astro@latest', '$ yarn create astro']} />
 
-			<h3>Start Building</h3>
+	<section class='page-content'>
+		<div class='container'>
+			<h2>Build faster websites.</h2>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum
-				deserunt inventore ut voluptate, officia maiores repellat tenetur
-				praesentium omnis est ex tempora a necessitatibus reiciendis at et
-				dignissimos. Ipsam eius consequuntur cupiditate aperiam porro, esse
-				laborum impedit nesciunt ut voluptatum assumenda aspernatur libero
-				iusto error molestias dolorum, necessitatibus labore?
+				create-astro is the fastest way to start a new Astro project from
+				scratch. It will walk you through every step of setting up your new
+				Astro project. It allows you to choose from a few different starter
+				templates or provide your own using the --template argument.
+			</p>
+
+			<Tabs
+				headings={['NPM', 'PNPM', 'YARN']}
+				contents={[
+					'$ npm create astro@latest',
+					'$ pnpm create astro@latest',
+					'$ yarn create astro',
+				]}
+			/>
+
+			<h3>Success! You are now ready to start building with Astro! 🥳</h3>
+			<p>
+				Here are a few topics that we recommend exploring next. You can read
+				them in any order. You can even leave our documentation for a bit and go
+				play in your new Astro project codebase, coming back here whenever you
+				run into trouble or have a question.
+			</p>
+			<p>
+				📚 Add a framework: Learn how to extend Astro with support for React,
+				Svelte, Tailwind and more using <code>npx astro add</code> in our <a
+					href='https://docs.astro.build/en/guides/integrations-guide/'
+					>Integrations guide.
+				</a>
+			</p>
+			<p>
+				📚 Deploy your site: Learn how to build and deploy an Astro project to
+				the web in our <a href='https://docs.astro.build/en/guides/deploy/'
+					>Deployment guide</a
+				>.
+			</p>
+			<p>
+				📚 Understand your codebase: Learn more about Astro’s project structure
+				in our <a
+					href='https://docs.astro.build/en/core-concepts/project-structure/'
+					>Project Structure guide</a
+				>.
 			</p>
 		</div>
 	</section>

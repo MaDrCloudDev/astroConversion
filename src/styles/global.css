@@ -1,6 +1,6 @@
 :root {
-  --color-primary: #0f172a;
-  --color-secondary: #6b21a8;
+  --color-primary: darkblue;
+  --color-secondary: purple;
 }
 
 *,
@@ -21,7 +21,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: orangered;
 }
 
 p {
